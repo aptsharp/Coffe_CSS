@@ -288,7 +288,11 @@
               <div class="col">
                 <div class="card card-menu">
                   <!-- para imagens randômicas -->
-                  <img src="https://Source.unsplash.com/random/?coffee&1" class="card-img-top" alt="coffee">
+                  <img
+                    src="https://Source.unsplash.com/random/?coffee&1"
+                    class="card-img-top"
+                    alt="coffee"
+                  />
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">qualquer titulo</p>
@@ -297,7 +301,11 @@
               </div>
               <div class="col">
                 <div class="card card-menu">
-                  <img src="https://Source.unsplash.com/random/?coffee&2" class="card-img-top" alt="coffee">
+                  <img
+                    src="https://Source.unsplash.com/random/?coffee&2"
+                    class="card-img-top"
+                    alt="coffee"
+                  />
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">This is a short card.</p>
@@ -306,24 +314,36 @@
               </div>
               <div class="col">
                 <div class="card card-menu">
-                  <img src="https://Source.unsplash.com/random/?coffee&3" class="card-img-top" alt="coffee">
+                  <img
+                    src="https://Source.unsplash.com/random/?coffee&3"
+                    class="card-img-top"
+                    alt="coffee"
+                  />
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text">
+                      This is a longer card with supporting text below as a
+                      natural lead-in to additional content.
+                    </p>
                   </div>
                 </div>
               </div>
               <div class="col">
                 <div class="card card-menu">
-                  <img src="https://Source.unsplash.com/random/?coffee&4" class="card-img-top" alt="coffee">
+                  <img
+                    src="https://Source.unsplash.com/random/?coffee&4"
+                    class="card-img-top"
+                    alt="coffee"
+                  />
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This content is a little bit longer.</p>
+                    <p class="card-text">
+                      This content is a little bit longer.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
-
           </div>
           <div
             class="tab-pane fade"
@@ -346,6 +366,69 @@
         </div>
       </section>
     </main>
+
+    <!-- modal -->
+
+    <!-- Button trigger modal -->
+
+    <section id="local" class="container text-center mb-5">
+      <!-- Button trigger modal -->
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Quero conhecer o Coffe_Shop!
+      </button>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="localModal"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="localModal">
+                Esperamos por você!
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <iframe
+                style="width: 100%;"
+                height="507"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                id="gmap_canvas"
+                src="https://maps.google.com/maps?width=605&amp;height=507&amp;hl=en&amp;q=Av:%20Paulista%20S%C3%A3o%20Paulo+(Coffe_shop)&amp;t=p&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              ></iframe
+              >
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Fechar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
