@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Coffe Shop</title>
+    <title>Coffe_Shop</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,57 +13,58 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
-    <!-- navbar -->
-    <nav
-      class="navbar navbar-expand-lg fixed-top"
-      style="background-color: #6f2f01de"
-      data-bs-theme="dark"
-      fixed-top
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="assets/img/logo.png" alt="logo cafe" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">Sobre Nós</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#menu">Cardápio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#local">Local</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Pesquisar"
-              aria-label="Search"
-            />
-            <button class="btn btn-success" type="submit">Buscar</button>
-          </form>
-        </div>
-      </div>
-    </nav>
-
     <main>
+      <!-- navbar -->
+      <nav
+        class="navbar navbar-expand-lg fixed-top"
+        style="background-color: #6f2f01de"
+        data-bs-theme="dark"
+        fixed-top
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets/img/logo.png" alt="logo cafe" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">Sobre Nós</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#menu">Cardápio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#local">Local</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Pesquisar"
+                aria-label="Search"
+              />
+              <button class="btn btn-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
       <!-- Carousel -->
 
       <header id="carousel-coffee" class="carousel slide" data-bs-ride="false">
@@ -223,6 +224,124 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- menu -->
+
+      <section id="menu" class="container mt-5 mb-5">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="Expressos_Produtivos-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#espresso-pane"
+              type="button"
+              role="tab"
+              aria-controls="espresso-pane"
+              aria-selected="true"
+            >
+              Expressos_Produtivos
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="Capucinos_Build-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#Capucinos_Build-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="Capucinos_Build-tab-pane"
+              aria-selected="false"
+            >
+              Capucinos_Build
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="Nespresso_Spec-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#Nespresso_Spec-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="Nespresso_Spec-tab-pane"
+              aria-selected="false"
+            >
+              Nespresso_Spec
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="espresso-pane"
+            role="tabpanel"
+            aria-labelledby="espresso"
+            tabindex="0"
+          >
+            <!-- coffe_cards -->
+            <div class="row row-cols-1 row-cols-md-3 g-4 mt-1">
+              <div class="col">
+                <div class="card card-menu">
+                  <!-- para imagens randômicas -->
+                  <img src="https://Source.unsplash.com/random/?coffee&1" class="card-img-top" alt="coffee">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">qualquer titulo</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-menu">
+                  <img src="https://Source.unsplash.com/random/?coffee&2" class="card-img-top" alt="coffee">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a short card.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-menu">
+                  <img src="https://Source.unsplash.com/random/?coffee&3" class="card-img-top" alt="coffee">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-menu">
+                  <img src="https://Source.unsplash.com/random/?coffee&4" class="card-img-top" alt="coffee">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This content is a little bit longer.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div
+            class="tab-pane fade"
+            id="Capucinos_Build-tab-pane"
+            role="tabpanel"
+            aria-labelledby="Capucinos_Build-tab"
+            tabindex="0"
+          >
+            Capucinos_Build
+          </div>
+          <div
+            class="tab-pane fade"
+            id="Nespresso_Spec-tab-pane"
+            role="tabpanel"
+            aria-labelledby="Nespresso_Spec-tab"
+            tabindex="0"
+          >
+            Nespresso_Spec
           </div>
         </div>
       </section>
