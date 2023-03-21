@@ -10,12 +10,12 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="assets/css/styles.css"/>
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
     <!-- navbar -->
     <nav
-      class="navbar navbar-expand-lg"
+      class="navbar navbar-expand-lg fixed-top"
       style="background-color: #6f2f01de"
       data-bs-theme="dark"
       fixed-top
@@ -63,104 +63,170 @@
       </div>
     </nav>
 
-    <!-- Carousel -->
+    <main>
+      <!-- Carousel -->
 
-    <div id="carousel-coffee" class="carousel slide">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carousel-coffee" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carousel-coffee" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carousel-coffee" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carousel-coffee" data-bs-slide-to="3" aria-label="Slide 4"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="https://images.unsplash.com/photo-1635971302902-8c36accc3e5b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" class="d-block w-100" alt="computador e cafe">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Vivenciando o melhor do ambiente</h5>
-            <p>Café e trabalho, o melhor gosto de produtividade</p>
+      <header id="carousel-coffee" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carousel-coffee"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel-coffee"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel-coffee"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel-coffee"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://images.unsplash.com/photo-1635971302902-8c36accc3e5b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+              class="d-block w-100"
+              alt="computador e cafe"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Vivenciando o melhor do ambiente</h5>
+              <p>Café e trabalho, o melhor gosto de produtividade</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.unsplash.com/photo-1570649243616-238b814943e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=773&q=80"
+              class="d-block w-100"
+              alt="ambiente cafe"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Ambiente pensado</h5>
+              <p>aconchego para toda familia</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.unsplash.com/photo-1494322296366-b46227baa318?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1175&q=80"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="carousel-item">
-          <img src="https://images.unsplash.com/photo-1570649243616-238b814943e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=773&q=80" class="d-block w-100" alt="ambiente cafe">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Ambiente pensado</h5>
-            <p>aconchego para toda familia</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="https://images.unsplash.com/photo-1494322296366-b46227baa318?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1175&q=80" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-coffee" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carousel-coffee" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carousel-coffee"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carousel-coffee"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </header>
 
-    <!-- quote/citações -->
+      <!-- quote/citações -->
 
-    <figure>
-      <blockquote class="blockquote">
-        <h3 class="fw-lighter text-center fst-italic mt-5">
-          "O amor é um café as 8 da manhã em ma segunda.""
-        </h3>
-      </blockquote>
-      <figcaption class="blockquote-footer text-center">
-      <cite title="Source Title">Wi_Coffee</cite>
-      </figcaption>
-    </figure>
+      <figure>
+        <blockquote class="blockquote">
+          <h3 class="fw-lighter text-center fst-italic mt-5">
+            "O amor é um café as 8 da manhã em ma segunda.""
+          </h3>
+        </blockquote>
+        <figcaption class="blockquote-footer text-center">
+          <cite title="Source Title">Wi_Coffee</cite>
+        </figcaption>
+      </figure>
 
-    <!-- about cards -->
+      <!-- about cards -->
 
-    <section id="about" class="container">
-      <div class="row">
-        <div class="col-lg-6 col-md-12">
-          <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="https://images.unsplash.com/photo-1505327191481-d31e1fb4ff79?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1349&q=80" class="img-fluid rounded-start" alt="cafe, mesa, computador">
+      <section id="about" class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <div class="card mb-3" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1505327191481-d31e1fb4ff79?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1349&q=80"
+                    class="img-fluid rounded-start"
+                    alt="cafe, mesa, computador"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Somos apaixonados por café</h5>
+                    <h6 class="card-subtitle text-muted mb-3">
+                      Acreditamos que o café pode mudar o mundo.
+                    </h6>
+                  </div>
+                </div>
               </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Somos apaixonados por café</h5>
-                  <h6 class="card-subtitle text-muted mb-3">Acreditamos que o café pode mudar o mundo.</h6>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="card mb-3" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    class="img-fluid rounded-start"
+                    alt="cafe, mesa madeira, computador MAC"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Produza mais com Café</h5>
+                    <h6 class="card-subtitle text-muted mb-3">
+                      Mais código com Café
+                    </h6>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-md-12">
-          <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="img-fluid rounded-start" alt="cafe, mesa madeira, computador MAC">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Produza mais com Café</h5>
-                  <h6 class="card-subtitle text-muted mb-3">Mais código com Café</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
